@@ -120,7 +120,7 @@ featuresY = renamevars(featuresB, featuresB.Properties.VariableNames, strcat(fea
 featureset = [featuresX featuresY]
 ```
 
-After the normalization, the combined features was put into a table and converted into an array for dinensionality reduction purposes. Namely; PCA and CCA
+After the normalization, the combined features was put into a table and converted into an array for dimensionality reduction purposes. Namely; PCA and CCA reduction techniques have been applied with the following MATLAB code depicted below for visualizations of the results. 
 
 ```matlab
 

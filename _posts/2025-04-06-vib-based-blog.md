@@ -37,11 +37,13 @@ dateCountsTable = table(uniqueDates', counts', 'VariableNames', {'Date', 'Count'
 
 % Step 5: Create a new column where Count is multiplied by 796
 dateCountsTable.NewCount = dateCountsTable.Count * 796;
+```
 
 Moreover, we used a function file shown below to extract 15 features from both the x and y vibrations signals:
 
 markdown
 ```matlab
+
 function statistical_features = stats(data, window_size, overlap)
     % Initialize an empty array to hold the statistical features
     statistical_features = [];
@@ -102,11 +104,13 @@ function statistical_features = stats(data, window_size, overlap)
     % Adjust layout
     sgtitle('Statistical Features'); % Add a super title for the entire figure
 end
+```
 
 This was followed by normalization of the set of features for both the x and y vibrations signals and combined for further analysis.
 
 markdown
 ```matlab
+
 Normalized Dataset
 featuresA = statsnormal(A,796,577);
 featuresB = statsnormal(B,796,577);
@@ -117,11 +121,13 @@ featuresX = renamevars(featuresA, featuresA.Properties.VariableNames, strcat(fea
 featuresY = renamevars(featuresB, featuresB.Properties.VariableNames, strcat(featuresB.Properties.VariableNames, '_Y'));
 % combining the x and y signals
 featureset = [featuresX featuresY]
+```
 
-After the normalization, the combined features was put into a table and converted into an array for dinensionality reducrion purposes.
+After the normalization, the combined features was put into a table and converted into an array for dinensionality reduction purposes. Namely; PCA and CCA
 
 markdown
 ```matlab
+
 Table format:
 X = table2array(featureset);
 
@@ -199,3 +205,4 @@ title('CCA Reduced Embedding');
 
 figure;
 dydxplot(P,squareform(pdist(X)),K,lambda0)
+```

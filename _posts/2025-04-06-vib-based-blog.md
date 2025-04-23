@@ -8,7 +8,6 @@ Upon attaining the vibrations signal of the bearing in the x and y directions, t
 to be loaded first into MATLAB's workspace for further exploration of the data. The two signals are plotted against time as well for further visualization labelled as timestamps. The timestamps was also analyzed 
 in order to convert it to datetime format for easier labelling of data collection allocation for which particular day and hour. 
 
-markdown
 ```matlab
 load x_vib_signal_bearing.mat;
 load y_vib_signal_bearing.mat;
@@ -41,7 +40,6 @@ dateCountsTable.NewCount = dateCountsTable.Count * 796;
 
 Moreover, we used a function file shown below to extract 15 features from both the x and y vibrations signals:
 
-markdown
 ```matlab
 
 function statistical_features = stats(data, window_size, overlap)
@@ -108,7 +106,6 @@ end
 
 This was followed by normalization of the set of features for both the x and y vibrations signals and combined for further analysis.
 
-markdown
 ```matlab
 
 Normalized Dataset
@@ -125,7 +122,6 @@ featureset = [featuresX featuresY]
 
 After the normalization, the combined features was put into a table and converted into an array for dinensionality reduction purposes. Namely; PCA and CCA
 
-markdown
 ```matlab
 
 Table format:

@@ -5,7 +5,7 @@ title: Remaining Useful Life Estimation for IM using ML Approach
 
 Rotating machines has become a crucial component for many industrial processes today and failure of this component has a great impact on the overall performance of industries.
 Upon attaining the vibrations signal of the bearing in the x and y directions, the data was explored using the MATLAB software and the code given below. The vibrations signal were attained as mlx files and has
-to be loaded first into MATLAB's workspace for further exploration of the data. The two signals are plotted against time as well for further visualization labelled as timestamps. The timestamps was also analyzed 
+to be loaded first into MATLAB's workspace for further exploration of the data. The two signals are plotted against time as well for further visualization labelled as timestamps. The timestamps was also analyzed. xxx 
 in order to convert it to datetime format for easier labelling of data collection allocation for which particular day and hour. 
 
 ```matlab

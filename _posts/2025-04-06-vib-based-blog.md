@@ -43,6 +43,15 @@ dateCountsTable.NewCount = dateCountsTable.Count * 796;
   <figcaption style="font-style: italic; font-size: 0.9em;">X-Vibration Signal</figcaption>
 </figure>
 
+Depcited above is the plot for the x acceleration vibration signal for all the bearing conditions from healthy state to the faulty state. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/y-vib-signal.png" alt="Y-Vibration Signal" title="Y-Vibration Signal" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <figcaption style="font-style: italic; font-size: 0.9em;">Y-Vibration Signal</figcaption>
+</figure>
+
+Illustrated above is the y acceleration vibration signal for all the conditions of the bearing from a healthy state to the faulty state
+
 ## Week 7 Update
 
 Moreover, we used a function file shown below to extract 15 features from both the x and y vibrations signals:

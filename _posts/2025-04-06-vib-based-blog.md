@@ -47,6 +47,12 @@ Depcited above is the plot for the x acceleration vibration signal for all the b
 It can be seen that the amplitude of the signal increases after a few points in time indicating the change in condition of the bearing.
 
 <figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/x-vib-signal-coloured.png" alt="X-Vibration Signal" title="X-Vibration Signal with Datetime" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Shown above is the x vibration signal with different colour coding depicting the different days at which the data was collected. 
+
+<figure style="text-align: center; margin: 0 auto;">
   <img src="/images/y-vib-signal.png" alt="Y-Vibration Signal" title="Y-Vibration Signal" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
   <figcaption style="font-style: italic; font-size: 0.9em;">Y-Vibration Signal</figcaption>
 </figure>

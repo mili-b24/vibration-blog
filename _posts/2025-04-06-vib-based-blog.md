@@ -38,7 +38,7 @@ dateCountsTable = table(uniqueDates', counts', 'VariableNames', {'Date', 'Count'
 % Step 5: Create a new column where Count is multiplied by 796
 dateCountsTable.NewCount = dateCountsTable.Count * 796;
 ```
-<figure style="text-align: center;">
+<figure style="text-align: center; margin: 0 auto;">
   <img src="/images/x-vib-signal.png" alt="X-Vibration Signal" title="X-Vibration Signal" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
   <figcaption style="font-style: italic; font-size: 0.9em;">X-Vibration Signal</figcaption>
 </figure>

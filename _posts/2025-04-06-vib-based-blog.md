@@ -6,7 +6,7 @@ title: Remaining Useful Life Estimation for IM using ML Approach
 
 Rotating machines has become a crucial component for many industrial processes today and failure of this component has a great impact on the overall performance of industries.
 Upon attaining the vibrations signal of the bearing in the x and y directions, the data was explored using the MATLAB software and the code given below. The vibrations signal were attained as mlx files and has
-to be loaded first into MATLAB's workspace for further exploration of the data. The two signals are plotted against time as well for further visualization labelled as timestamps. The timestamps was also analyzed. xxx 
+to be loaded first into MATLAB's workspace for further exploration of the data. The two signals are plotted against time as well for further visualization labelled as timestamps. The timestamps was also analyzed 
 in order to convert it to datetime format for easier labelling of data collection allocation for which particular day and hour. 
 
 ```matlab
@@ -43,14 +43,16 @@ dateCountsTable.NewCount = dateCountsTable.Count * 796;
   <figcaption style="font-style: italic; font-size: 0.9em;">X-Vibration Signal</figcaption>
 </figure>
 
-Depcited above is the plot for the x acceleration vibration signal for all the bearing conditions from healthy state to the faulty state. 
+Depcited above is the plot for the x acceleration vibration signal for all the bearing conditions from healthy state to the faulty state.
+It can be seen that the amplitude of the signal increases after a few points in time indicating the change in condition of the bearing.
 
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/images/y-vib-signal.png" alt="Y-Vibration Signal" title="Y-Vibration Signal" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
   <figcaption style="font-style: italic; font-size: 0.9em;">Y-Vibration Signal</figcaption>
 </figure>
 
-Illustrated above is the y acceleration vibration signal for all the conditions of the bearing from a healthy state to the faulty state
+Illustrated above is the y acceleration vibration signal for all the conditions of the bearing from a healthy state to the faulty state.
+The y vibration signal also shows an increase in amplitude until failure. 
 
 ## Week 7 Update
 

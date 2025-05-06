@@ -39,9 +39,8 @@ dateCountsTable = table(uniqueDates', counts', 'VariableNames', {'Date', 'Count'
 dateCountsTable.NewCount = dateCountsTable.Count * 796;
 ```
 <div style="text-align: center;">
-  <img src="/images/x-vib%20signal.png" alt="X-Vibration Signal" style="max-width: 100%; height: auto;" />
+  <img src="{{ '/images/x-vib%20signal.png' | relative_url }}" alt="X-Vibration Signal" style="max-width: 100%; height: auto;" />
 </div>
-
 
 ## Week 7 Update
 

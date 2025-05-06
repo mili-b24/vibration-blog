@@ -2,6 +2,7 @@
 layout: post
 title: Remaining Useful Life Estimation for IM using ML Approach
 ---
+## Week 6 Update
 
 Rotating machines has become a crucial component for many industrial processes today and failure of this component has a great impact on the overall performance of industries.
 Upon attaining the vibrations signal of the bearing in the x and y directions, the data was explored using the MATLAB software and the code given below. The vibrations signal were attained as mlx files and has
@@ -37,6 +38,8 @@ dateCountsTable = table(uniqueDates', counts', 'VariableNames', {'Date', 'Count'
 % Step 5: Create a new column where Count is multiplied by 796
 dateCountsTable.NewCount = dateCountsTable.Count * 796;
 ```
+
+## Week 7 Update
 
 Moreover, we used a function file shown below to extract 15 features from both the x and y vibrations signals:
 
@@ -120,6 +123,8 @@ featuresY = renamevars(featuresB, featuresB.Properties.VariableNames, strcat(fea
 featureset = [featuresX featuresY]
 ```
 
+## Week 8 Update
+
 After the normalization, the combined features was put into a table and converted into an array for dimensionality reduction purposes. Namely; PCA and CCA reduction techniques have been applied with the following MATLAB code depicted below for visualizations of the results. 
 
 ```matlab
@@ -202,3 +207,4 @@ title('CCA Reduced Embedding');
 figure;
 dydxplot(P,squareform(pdist(X)),K,lambda0)
 ```
+## Week 9 Update

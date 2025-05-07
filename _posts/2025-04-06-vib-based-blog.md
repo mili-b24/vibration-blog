@@ -66,7 +66,7 @@ Depicted above is also the y vibration signal with the colour coding, differenti
 
 ## Week 7 Update
 
-Moreover, we used a function file shown below to extract 15 features from both the x and y vibrations signals:
+Moreover, we used a function file shown below to extract 15 features from both the x and y vibrations signals by calling the function in the MATLAB main file:
 
 ```matlab
 
@@ -131,6 +131,17 @@ function statistical_features = stats(data, window_size, overlap)
     sgtitle('Statistical Features'); % Add a super title for the entire figure
 end
 ```
+15 statistical time-domain features were extracted from the raw data of x and y vibration signals individually at first. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/x-stats.png" alt="X Statistical Features" title="X Statistical Time-Domain Features" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Illustrated above are the 15 time-domain statistical features for the x vibration signal. This includes the mean, max, rms, srm, std, var, rms shape, srm shape, crest factor, lareral factor, impulse factor, skewness, kurtosis, 5th moment, and the 6th moment. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/y-stats.png" alt="Y Statistical Features" title="Y Statistical Time-Domain Features" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
 
 This was followed by normalization of the set of features for both the x and y vibrations signals and combined for further analysis.
 

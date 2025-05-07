@@ -40,7 +40,6 @@ dateCountsTable.NewCount = dateCountsTable.Count * 796;
 ```
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/images/x-vib-signal.png" alt="X-Vibration Signal" title="X-Vibration Signal" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
-  <figcaption style="font-style: italic; font-size: 0.9em;">X-Vibration Signal</figcaption>
 </figure>
 
 Depcited above is the plot for the x acceleration vibration signal for all the bearing conditions from healthy state to the faulty state.
@@ -54,11 +53,16 @@ Shown above is the x vibration signal with different colour coding depicting the
 
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/images/y-vib-signal.png" alt="Y-Vibration Signal" title="Y-Vibration Signal" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
-  <figcaption style="font-style: italic; font-size: 0.9em;">Y-Vibration Signal</figcaption>
 </figure>
 
 Illustrated above is the y acceleration vibration signal for all the conditions of the bearing from a healthy state to the faulty state.
 The y vibration signal also shows an increase in amplitude until failure. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/y-vib-signal-coloured.png" alt="Y-Vibration Signal" title="Y-Vibration Signal with Datetime" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Depicted above is also the y vibration signal with the colour coding, differentiating the different days at which the vibration data has been collected.
 
 ## Week 7 Update
 

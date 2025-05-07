@@ -269,9 +269,16 @@ Upon attaining the final set of features, having a total of 30 features, the fir
   <img src="/images/fpt_rultrend.png" alt="RUL Trend with FPT" title="RUL Trend with FPT" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
-Moreover, model training was carried out beginning with the LSTM model for the whole feature set.
+Moreover, model training was carried out beginning with the LSTM model for the whole feature set with the windowing technique.
 
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/images/lstm_model.png" alt="LSTM Model for the original featureset" ti tle="LSTM Model for the original featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
+The above figure illustartes the trained LSTM model for the raw featureset. The blue  dotted line indicates the actual RUL trend whereas the solid red line indicates the predicted RUL trend. The RMSE value was also computed and resulted in a value of 43.4671.
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/train&test.png" alt="LSTM Model for the divided set" ti tle="LSTM Model for the divided set" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+The figure above illustrates the trained LSTM  model for the divided set. The training set was 70% and the test set 30%, however a higher RMSE value was attained.

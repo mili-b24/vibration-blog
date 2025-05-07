@@ -246,8 +246,16 @@ figure;
 dydxplot(P,squareform(pdist(X)),K,lambda0)
 ```
 <figure style="text-align: center; margin: 0 auto;">
-  <img src="/images/x-pca.png" alt="Y Statistical Features" title="Principal Component Analysis of the Featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="/images/pca-X.png" alt="X Statistical Features" title="Principal Component Analysis of the Featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
-Depicted in the above figure is the pareto chart after applying the PCA on the final featureset.  
-## Week 9 Update
+Depicted in the above figure is the pareto chart after applying the PCA on the final featureset. The dimension has been reduced to 2 principal components with a total percent varaince explained of 99.6254%. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/correlation-X.png" alt="Correlation of features" title="Correlation of the Features" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Illustrated above is the heatmap with the colour indication 
+## Week 9 Update (Classifier and Feature Ranking)
+
+## Week 10 Update (Model Training)

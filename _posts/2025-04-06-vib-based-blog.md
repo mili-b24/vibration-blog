@@ -59,10 +59,10 @@ Illustrated above is the y acceleration vibration signal for all the conditions 
 The y vibration signal also shows an increase in amplitude until failure. 
 
 <figure style="text-align: center; margin: 0 auto;">
-  <img src="/images/y-vib-signal-coloured.png" alt="Y-Vibration Signal" title="Y-Vibration Signal with Datetime" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="/images/y-vib-loads.png" alt="Y-Vibration Signal" title="Y-Vibration Signal with Different Loading Conditions" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
-Depicted above is also the y vibration signal with the colour coding, differentiating the different days at which the vibration data has been collected.
+Depicted above is also the y vibration signal with the colour coding, differentiating the different days at which the vibration data has been collected as well as the different loads at which the rotating machine was operated under. 
 
 ## Week 7 Update
 

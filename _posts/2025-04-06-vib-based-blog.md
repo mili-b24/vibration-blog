@@ -258,4 +258,20 @@ Depicted in the above figure is the pareto chart after applying the PCA on the f
 Illustrated above is the heatmap with the colour indication 
 ## Week 9 Update (Classifier and Feature Ranking)
 
-## Week 10 Update (Model Training)
+## Week 10 Update
+Upon attaining the final set of features, having a total of 30 features, the first prediction time (FPT) was computed using MATLAB. This indicates the time at which the degradation process starts or the separating point between healthy and faulty trend. Hence depicted in the two figures below are the determination of FPT value and the trend in the RUL using the FPT value respectively.
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/fpt_featset.png" alt="Determination of FPT value" title="Determination of FPT value" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/fpt_rultrend.png" alt="RUL Trend with FPT" title="RUL Trend with FPT" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Moreover, model training was carried out beginning with the LSTM model for the whole feature set.
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/lstm_model.png" alt="LSTM Model for the original featureset" ti tle="LSTM Model for the original featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+

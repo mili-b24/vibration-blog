@@ -161,11 +161,9 @@ featuresY = renamevars(featuresB, featuresB.Properties.VariableNames, strcat(fea
 featureset = [featuresX featuresY]
 ```
 
-
-
 ## Week 8 Update
 
-After the normalization, the combined features was put into a table and converted into an array for dimensionality reduction purposes. Namely; PCA and CCA reduction techniques have been applied with the following MATLAB code depicted below for visualizations of the results. 
+After the normalization, the combined features was put into a table and converted into an array for dimensionality reduction purposes. Namely; PCA and CCA reduction techniques have been applied with the following MATLAB code depicted below for visualizations of the results. The correlation graph was also plotted to show the relationship between the true class and predicted class of the 30 features 
 
 ```matlab
 
@@ -247,4 +245,9 @@ title('CCA Reduced Embedding');
 figure;
 dydxplot(P,squareform(pdist(X)),K,lambda0)
 ```
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/x-pca.png" alt="Y Statistical Features" title="Principal Component Analysis of the Featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Depicted in the above figure is the pareto chart after applying the PCA on the final featureset.  
 ## Week 9 Update

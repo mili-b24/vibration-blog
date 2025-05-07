@@ -143,7 +143,9 @@ Illustrated above are the 15 time-domain statistical features for the x vibratio
   <img src="/images/y-stats.png" alt="Y Statistical Features" title="Y Statistical Time-Domain Features" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
-This was followed by normalization of the set of features for both the x and y vibrations signals and combined for further analysis.
+The figure above shows the 15 statistical time-domain features for the y vibration signal. 
+
+This was followed by normalization of the set using the zscore in built command on MATLAB for the individual vibration signal. The individual extracted feature sets was combined, representing a single set of features labelled as X with 7855 samples and 30 features in total. This was done using the MATLAB code depicted below.  
 
 ```matlab
 
@@ -158,6 +160,8 @@ featuresY = renamevars(featuresB, featuresB.Properties.VariableNames, strcat(fea
 % combining the x and y signals
 featureset = [featuresX featuresY]
 ```
+
+
 
 ## Week 8 Update
 

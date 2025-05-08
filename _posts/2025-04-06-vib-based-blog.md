@@ -277,6 +277,10 @@ The figure above depicts the scatter plot for the two feautres mean and srm for 
 
 The above figure illustrates the 3D scatter plot for the three features for the x vibration signal followed by the 3D scatter plot for the same features but for the y vibration signal. 
 
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/scatter3D2.png" alt="Scatter plot of Mean vs Max vs RMS" title="Scatter plot of Mean vs Max vs RMS" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
 ## Week 10 Update
 Upon attaining the final set of features, having a total of 30 features, the first prediction time (FPT) was computed using MATLAB. This indicates the time at which the degradation process starts or the separating point between healthy and faulty trend. Hence depicted in the two figures below are the determination of FPT value and the trend in the RUL using the FPT value respectively.
 

@@ -317,9 +317,24 @@ The dataset, feature extraction and normalization of the vibrations signal was r
 A total of seven models were trained for each sets of data. The normalized original dataset and the PCA reduced dataset. This includes the hybrid transfer learning combining two multilayer perceptron modles. First MLP has two fully connected two layers having 50 and 25 neurons respectively. The second MLP has three fully connected layers having 128, 64, and 16 neurons respectively while the other models includes SVM, CNN, FNN, RNN, and random forest (RF). The models were evaluated and analyzed based on the performance metrics for the validation and test sets. This is illustrated in the two tables below. 
 
 <figure style="text-align: center; margin: 0 auto;">
-  <img src="/images/train&test.png" alt="LSTM Model for the divided set" ti tle="LSTM Model for the divided set" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="/images/validation.png" alt="Validation Performance Metrics for all Models" ti tle="Validation Performance Metrics for all Models" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
 <figure style="text-align: center; margin: 0 auto;">
-  <img src="/images/train&test.png" alt="LSTM Model for the divided set" ti tle="LSTM Model for the divided set" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="/images/test.png" alt="Test Perfromance Metrics for all Models" ti tle="Test Perfromance Metrics for all Models" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
+
+Moreover, it can be seen that the FNN model with respect to the test performance metrics yielded less errors (approaching zero) and having the coefficient of determination value positively greater than the rest of the models for the PCA reduced dataset. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/response.png" alt="Plot of the Train, Validation, and Test for FNN Model" ti tle="Plot of the Train, Validation, and Test for FNN Model" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+The figure illustrated above depicts the plot of the three sets training, validation, and test for the Feed-forward Neural Network having the PCA reduced dataset as the input. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/fnnarchitecture.png" alt="FNN Model Architecture" ti tle="FNN Model Architecture" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+Depicted in the figure above is the general architecutre of an FNN model. The model takes in the 10 features (principal components) from the PCA and feeds it forward to two hidden layers before getting the final output. The first layer contains 50 neurons while the second layer contains 20 neurons before ultimately feeding to the output which is the RUL in this case.
+

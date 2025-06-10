@@ -249,7 +249,7 @@ dydxplot(P,squareform(pdist(X)),K,lambda0)
   <img src="/images/newpca.png" alt="X Statistical Features" title="Principal Component Analysis of the Featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
-Depicted in the above figure is the pareto chart after applying the PCA on the final featureset. The dimension has been reduced to 2 principal components with a total percent varaince explained of 99.6254%. 
+Depicted in the above figure is the pareto chart after applying the PCA on the final featureset. The dimension has been reduced to 10 principal components with a total percent varaince explained of 99.6254%. 
 
 <figure style="text-align: center; margin: 0 auto;">
   <img src="/images/correlation-X.png" alt="Correlation of features" title="Correlation of the Features" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
@@ -305,3 +305,21 @@ The above figure illustartes the trained LSTM model for the raw featureset. The 
 </figure>
 
 The figure above illustrates the trained LSTM  model for the divided set. The training set was 70% and the test set 30%, however a higher RMSE value was attained.
+
+## Week 11 Update
+Dataset was splitted into two sets .i.e 70% training and 30% for testing and evaluation of the models performance on the training set. This was done for the normlaized dataset and the PCA reduced dataset. Five models were then trained for each sets of datasets and the performnce metrics was evaluated.
+
+It was realized that the ARIMA model yielded the desired results that is zero errors with a coefficient of determination value of 1. The model architectures were also made using canva.
+
+## Week 12 and 13 Update 
+The dataset, feature extraction and normalization of the vibrations signal was re-evaluated. The features were extracted first before normalization of the signal was carried out. This was followed by thorough model training, hyperparameter tuning and combining of two models in order to predict the RUL of the Induction Machine.
+
+A total of seven models were trained for each sets of data. The normalized original dataset and the PCA reduced dataset. This includes the hybrid transfer learning combining two multilayer perceptron modles. First MLP has two fully connected two layers having 50 and 25 neurons respectively. The second MLP has three fully connected layers having 128, 64, and 16 neurons respectively while the other models includes SVM, CNN, FNN, RNN, and random forest (RF). The models were evaluated and analyzed based on the performance metrics for the validation and test sets. This is illustrated in the two tables below. 
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/train&test.png" alt="LSTM Model for the divided set" ti tle="LSTM Model for the divided set" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>
+
+<figure style="text-align: center; margin: 0 auto;">
+  <img src="/images/train&test.png" alt="LSTM Model for the divided set" ti tle="LSTM Model for the divided set" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+</figure>

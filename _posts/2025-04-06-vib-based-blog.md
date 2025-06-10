@@ -246,7 +246,7 @@ figure;
 dydxplot(P,squareform(pdist(X)),K,lambda0)
 ```
 <figure style="text-align: center; margin: 0 auto;">
-  <img src="/images/pca-X.png" alt="X Statistical Features" title="Principal Component Analysis of the Featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+  <img src="/images/newpca.png" alt="X Statistical Features" title="Principal Component Analysis of the Featureset" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
 </figure>
 
 Depicted in the above figure is the pareto chart after applying the PCA on the final featureset. The dimension has been reduced to 2 principal components with a total percent varaince explained of 99.6254%. 

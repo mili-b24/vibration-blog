@@ -309,7 +309,38 @@ The figure above illustrates the trained LSTM  model for the divided set. The tr
 ## Week 11 Update
 Dataset was splitted into two sets .i.e 70% training and 30% for testing and evaluation of the models performance on the training set. This was done for the normlaized dataset and the PCA reduced dataset. Five models were then trained for each sets of datasets and the performnce metrics was evaluated.
 
-It was realized that the ARIMA model yielded the desired results that is zero errors with a coefficient of determination value of 1. The model architectures were also made using canva.
+```matlab
+H = size(FeaturesetNorm, 1);  % Calculates the total number of samples
+
+% Perform sequential partition of the faulty stage of data
+nTrain = floor(0.7 * H);    
+nVal = floor(0.15 * H);     
+nTest = H - nTrain - nVal;  
+
+% Split features into training,validation and testing
+trainSet = FeaturesetNorm(1:nTrain,1:30);
+trainResp = RUL(1:nTrain,1);
+trainResp = table2array(trainResp);
+
+valSet = FeaturesetNorm(nTrain+1 : nTrain+nVal,1:30);
+valResp = RUL(nTrain+1 : nTrain+nVal,1);
+valResp = table2array(valResp);
+
+testSet = FeaturesetNorm(nTrain+nVal+1 : H,1:30);
+testResp = RUL(nTrain+nVal+1 : H,1);
+testResp = table2array(testResp);
+
+% Number of samples for each set
+numTrainSamples = size(trainSet, 1);
+numValSamples = size(valSet, 1);
+numTestSamples = size(testSet, 1);
+
+% Reshape each set: [numSamples x features] --> [features x 1 x numSamples]
+trainSet3D = reshape(trainSet', [size(trainSet,2), 1, numTrainSamples]);
+valSet3D = reshape(valSet', [size(valSet,2), 1, numValSamples]);
+testSet3D = reshape(testSet', [size(testSet,2), 1, numTestSamples]);
+```
+The same was also done for the PCA reduced dataset. Moeover, after doing tests runs on a few of he models for training, It was realized that the ARIMA model yielded the desired results that is zero errors with a coefficient of determination value of 1. The model architectures were also made using canva.
 
 ## Week 12 and 13 Update 
 The dataset, feature extraction and normalization of the vibrations signal was re-evaluated. The features were extracted first before normalization of the signal was carried out. This was followed by thorough model training, hyperparameter tuning and combining of two models in order to predict the RUL of the Induction Machine.
